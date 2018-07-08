@@ -6,11 +6,11 @@ tweak which natively enables the tethering feature in the Settings App.
 Since the tweak only works with a jailbroken device running Subtrate
 (or Substitute if using Electra Jailbreak) I had to modify it and
 wrap the exploit in an enclosed package. All builds will be located in
-the "Releases" folder. I recommend sticking to the .ipa's in the "StableBuilds" folder,
+the "IPA's" folder. I recommend sticking to the .ipa's in the "StableBuilds" folder,
 the ones in "TestBuilds" are just where i have XCode send the initial builds and are likely
 unstable.
 
 Installing:
-Just download the .ipa file from the "StableBuilds" under "Releases" and sideload with
+Just download the .ipa file from the "StableBuilds" under "IPA's" and sideload with
 Cydia Impactor. Official site & downloads @ http://www.cydiaimpactor.com/
 
