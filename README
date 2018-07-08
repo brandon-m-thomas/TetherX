@@ -1,16 +1,22 @@
-TetherX - Tethering Solution for stock iOS
+--------------------------------------------------
+    TetherX - Tethering Solution for Stock iOS
+--------------------------------------------------
 
-I wrote TetherX as an alternative for my already existing cydia
-tweak which natively enables the tethering feature in the Settings App.
+
+
+I wrote TetherX as an alternative for my already existing cydia tweak
+which natively enables the tethering feature in the Settings App.
 
 Since the tweak only works with a jailbroken device running Subtrate
 (or Substitute if using Electra Jailbreak) I had to modify it and
-wrap the exploit in an enclosed package. All builds will be located in
-the "IPA's" folder. I recommend sticking to the .ipa's in the "StableBuilds" folder,
-the ones in "TestBuilds" are just where i have XCode send the initial builds and are likely
-unstable.
+wrap the exploit in an sandboxed app package. All builds will be located in
+the "IPA's" folder. I recommend only downloading/installing builds in 
+the "StableBuilds" folder. Those located in "TestBuilds" are likely unstable
+and will probably require a Developer AppleID to work properly.
 
 Installing:
 Just download the .ipa file from the "StableBuilds" under "IPA's" and sideload with
 Cydia Impactor. Official site & downloads @ http://www.cydiaimpactor.com/
 
+Soon I plan on pre-signing all of the app packages so you can just download directly
+on your iDevice with a link I will provide when it's ready.

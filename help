@@ -1,3 +1,10 @@
+--------------------------------------------------
+           TetherX Help Documentation
+--------------------------------------------------
+
+Here is the support documentation for the TetherX
+Project. 
+
 First Time Set-up Instructions
 *These instructions are for first-time setup ONLY
  Instructions to re-enable and reconnect to tether are located towards the bottom
@@ -41,6 +48,7 @@ Setup a tethering service on your MacBook:
     For Interface select Wi-Fi
     For Service Name put something like "Tether"
     Then click Create
+    
 Step 6:
 Configure Static IP, DNS, and SOCKS Proxy on your MacBook:
     Click on your tethering Wi-Fi service you just created and go to Advanced...
@@ -59,7 +67,8 @@ Configure Static IP, DNS, and SOCKS Proxy on your MacBook:
     *It is important that you hit apply or nothing you did will start working yet
 
 **You are now connected**
-Now you should be able to open up your web browser and go to a web page. The data will be passing through your iPhones cellular connection. Sometimes if it doesn't work I have to click Wi-Fi in the menu bar and select the duplicate of the MacBook tethering network after the very last step. This app only passes some protocols through the SOCKS proxy... so you mainly just have access to the browser over the internet and some applications.
+Now you should be able to open up your web browser and go to a web page. The data will be passing through your iPhones cellular connection and be bridged over the Ad-Hoc network you created on your PC, effectivly allowing you to tether without alerting your
+carrier or having to jailbreak your iDevice.
 
 To disconnect:
     Open your Macbook's Network Preferences
