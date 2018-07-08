@@ -1,0 +1,91 @@
+First Time Set-up Instructions
+*These instructions are for first-time setup ONLY
+ Instructions to re-enable and reconnect to tether are located towards the bottom
+ of this file
+
+
+Step 1:
+On your laptop start a computer-to-computer Wi-Fi network:
+    Click on the Wi-Fi icon in the menubar.
+    Click "Create Network..."
+    Click "Create", and name the network
+    *Choose a name that you will use EVERYTIME so you don't have to repeat setup
+
+Step 2:
+Connect your iPhone to the computer-to-computer Wi-Fi network you created:
+    On the iPhone go to Settings->Wi-Fi.
+    Select the Wi-Fi network of your MacBook.
+    Hit "Join anyway" if you get a prompt.
+    *From now on, we will call this your tethering network
+
+Step 3:
+Run the Tethering App on your iPhone:
+    Launch the app on your iPhone
+    In the Tethering app press "Start".
+    *Take note of the IP Address, and the Port displayed.
+
+Step 4:
+Configure your iPhone to act as a WiFi router:
+    Go to Settings->Wi-Fi-> and hit "i" next to your network name
+    Click "Configure IP"
+    Click "Manual"
+    Enter the IP address from the app and 255.255.255.0 for the subnet mask.
+    *Your iPhone should remember this now everytime you connect to your MacBook's tethering network.
+    *Keep the Tethering app open and your iPhone on through the rest of the process.
+
+Step 5:
+Setup a tethering service on your MacBook:
+    *The best way to do this is to create a new Wi-Fi service so that you don't have to revert your changes everytime you don't want to tether.
+    Go to System Preferences->Network
+    On the bottom left click the "+"
+    For Interface select Wi-Fi
+    For Service Name put something like "Tether"
+    Then click Create
+Step 6:
+Configure Static IP, DNS, and SOCKS Proxy on your MacBook:
+    Click on your tethering Wi-Fi service you just created and go to Advanced...
+    Click the TCP/IP Tab
+    Click the drop-down menu next to "Configure IPv4"
+    Select "Manually"
+    For the IPV4 Address enter the first 3 digit sets the same as those in the Tethering app, and for the last one choose a different number from your iPhone address between 2 and 253.
+    Set the subnet mask to 255.255.255.0
+    For router put in the IP Address that is in the tethering app.
+    Go to the DNS Tab and click "+" in the bottom left and enter the iPhone IP Address
+    Go to the Proxies tab
+    Check "SOCKS Proxy"
+    In the "SOCKS Proxy Server" field, enter the address and port that appear in the tethering app
+    Press OK
+    Press Apply
+    *It is important that you hit apply or nothing you did will start working yet
+
+**You are now connected**
+Now you should be able to open up your web browser and go to a web page. The data will be passing through your iPhones cellular connection. Sometimes if it doesn't work I have to click Wi-Fi in the menu bar and select the duplicate of the MacBook tethering network after the very last step. This app only passes some protocols through the SOCKS proxy... so you mainly just have access to the browser over the internet and some applications.
+
+To disconnect:
+    Open your Macbook's Network Preferences
+    Disconnect from your tethering network
+    Go back to the tethering app on your iPhone
+    Click "Stop"
+    Close the tethering app
+    Turn off WiFi on your iPhone
+
+To reconnect to your normal network after tethering:
+    Select your original WiFi service
+    Reconnect to your original
+    Wait a few seconds
+    Test your WiFi
+
+To re-enable and reconnect to tether:
+    On your Macbook, recreate your tethering network like you did in Step 1.
+        Open your Network Preferences
+        Select your tethering service you created in Step 5.
+        *Be sure to use the same name you did the first time otherwise your iPhone may not remeber the IP and subnet settings you made in Step 6.
+    On your iPhone, connect to your tethering WiFi network that is listed under "DEVICES" and hit "Join Anyway" when prompted.
+    *If you don't see the network, turn off your WiFi on your iPhone, wait a few seconds, turn it back on, and check again.
+    Open the tethering app and click start.
+    On your Macbook, connect to the duplicate tethering network under WiFi in the status bar
+    *After you connect to the duplicate, it should disappear and you should only see on tethering network now.
+    You should be connected and good to go!
+
+
+
