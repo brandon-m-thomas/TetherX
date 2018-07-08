@@ -2,8 +2,6 @@
     TetherX - Tethering Solution for Stock iOS
 --------------------------------------------------
 
-
-
 I wrote TetherX as an alternative for my already existing cydia tweak
 which natively enables the tethering feature in the Settings App.
 
@@ -16,7 +14,30 @@ and will probably require a Developer AppleID to work properly.
 
 Installing:
 Just download the .ipa file from the "StableBuilds" under "IPA's" and sideload with
-Cydia Impactor. Official site & downloads @ http://www.cydiaimpactor.com/
+Cydia Impactor. 
+
+Sideloading an app with Cydia Impactor:
+1.)Download Cydia Impactor http://www.cydiaimpactor.com/
+2.)Open Impactor on your computer and connect your iDevice via usb.
+3.)Go to https://appleid.apple.com/ and sign in with your Apple ID
+4.)Once signed in, scroll down to "Security," and then click on "Generate Password"
+-->These are App-Specific passwords that allow apps to sign in with your AppleID
+without exposing your real Apple ID Password.
+5.)Enter in a label for the password (can literally be anything) and then click "Create"
+6.)The string that is generated is your app-specific password. Copy this password
+as its what we will be using in Cydia Impactor to sign in and install the ipa.
+7.)Open Cydia Impactor and drag the ipa file into the Impactor window.
+8.)You should now be prompted for you Apple ID email, enter it and push OK
+9.)Now Impactor will ask you for a password for the AppleID email you just entered. Use
+your App-Specific password we generated earlier and then click "OK." (You can also right-click and paste it)
+10.)Impactor will now temp-sign the application package. Now just wait for Impactor to finish.
+11.)On your iDevice go to Settings->General->Device Managment. You should now have a developer profile
+from your AppleID. Open the profile and then click "Trust." The application will remain valid
+for 7 days after installing. Once the 7 days are up you'll have to resign/reimpact the application.
+(Unless you sign with a AppleDev account).
+12.) YOU'RE DONE! Now you can launch the application
+
 
 Soon I plan on pre-signing all of the app packages so you can just download directly
-on your iDevice with a link I will provide when it's ready.
+on your iDevice without needing to use Impactor at all...
+Will provide a link when it's ready!
